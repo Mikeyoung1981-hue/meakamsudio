@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Meakam Studio</title>
+<meta name="description" content="Meakam Studio — puzzle games and apps for iPad and iPhone by Mike Young.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="">
+<header id="site-header"></header>
+<main>
+
+<div class="wrap page-head"><h1>Privacy Policy</h1><p>DRAFT — have this checked before launch.</p></div>
+<section>
+  <div class="wrap prose">
+    <p><em>Last updated: November 2026</em></p>
+    <p>This policy covers games and apps made by Mike Young (Meakam Studio) and this website.</p>
+    <h2>What we collect</h2>
+    <p>Our games do not ask for your name, email or location. We do not show ads and we do not sell data.</p>
+    <h2>Apple services</h2>
+    <p>Some games use Apple services: <strong>Game Center</strong> for leaderboards, <strong>iCloud</strong> to sync your progress, and <strong>in-app purchases</strong>. Apple handles this data under its own privacy policy. We never see your payment details.</p>
+    <h2>This website</h2>
+    <p>This website does not use cookies or tracking. It is hosted on GitHub Pages, which may keep basic server logs (like IP addresses) for security.</p>
+    <h2>Children</h2>
+    <p>Our games are suitable for all ages and do not knowingly collect personal information from children.</p>
+    <h2>Contact</h2>
+    <p>Questions? Email <a id="privacy-email" href="#"></a>.</p>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const e = (window.STUDIO || {}).email; const a = document.getElementById("privacy-email");
+    a.textContent = e; a.href = "mailto:" + e;
+  });
+</script>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/projects.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
