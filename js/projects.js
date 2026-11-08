@@ -46,26 +46,34 @@ window.PROJECTS = [
   },
 
   {
-    id: "my-released-game",            // TODO: change (lowercase, dashes, no spaces)
+    id: "letter-day",
     kind: "game",
     status: "released",
-    name: "My Released Game",          // TODO: real name
-    tagline: "One short line about the game.",
+    name: "Letter Day",
+    tagline: "Your daily word search journey.",
     when: "Out now on iPad",
-    platforms: ["iPad"],
-    color: "#7a3fd1",
-    icon: "assets/projects/my-released-game/icon.png",
-    screenshots: [],
+    platforms: ["iPad", "Mac (Apple chip)", "Apple Vision"],
+    color: "#e0793a",
+    icon: "assets/projects/letter-day/icon.png",
+    screenshots: [
+      // "assets/projects/letter-day/shot-1.png",
+      // "assets/projects/letter-day/shot-2.png",
+    ],
     video: "",
     about: [
-      "A few sentences about what the game is and why it's fun."
+      "A calm word search for every day. Each morning brings a new themed puzzle — quick ones on weekdays, bigger ones on the weekend.",
+      "Want more? Adventure Mode has over 500 levels across five books, with no timer. Pip the pencil will keep you company."
     ],
     features: [
-      "Feature one",
-      "Feature two"
+      "A new themed word search every day",
+      "Adventure Mode: 500+ levels in five books, no timer",
+      "Full archive of past daily puzzles",
+      "Badges, a bookshelf of collected books and a global leaderboard",
+      "Pick your own accent colour",
+      "No ads, no subscriptions — one small purchase unlocks everything"
     ],
     links: {
-      appStore: "https://apps.apple.com/",   // TODO: paste the real App Store link
+      appStore: "https://apps.apple.com/ca/app/letter-day/id6767080426",
       facebook: ""
     }
   }
@@ -76,7 +84,8 @@ window.PROJECTS = [
 /* Studio details used across the site */
 window.STUDIO = {
   name: "Meakam Studio",
-  email: "hello@meakamstudio.com",   // TODO: change to an email you actually check
+  email: "support@meakamstudio.com",
+  feedbackEmail: "feedback@meakamstudio.com",
   facebook: "",                        // optional
   developerName: "Mike Young"          // the name shown on the App Store
 };

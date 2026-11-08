@@ -23,7 +23,10 @@
     header.className = "site-header";
     header.innerHTML = `
       <div class="wrap">
-        <a class="logo" href="index.html"><span class="dot"></span>${esc(S.name)}</a>
+        <a class="logo" href="index.html" aria-label="${esc(S.name)} home">
+          <img class="logo-mark" src="/assets/brand/meakam-mark.svg" alt="">
+          <span class="logo-text"><b>MEAKAM</b><small>STUDIO</small></span>
+        </a>
         <button class="menu-btn" aria-label="Menu">☰</button>
         <nav class="nav">
           ${links.map(([href, label, key]) =>
