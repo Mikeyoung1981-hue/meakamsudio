@@ -41,7 +41,7 @@ window.PROJECTS = [
     ],
     links: {
       appStore: "",
-      facebook: ""
+      facebook: "https://www.facebook.com/share/1F73ZLoiHU/"
     }
   },
 
@@ -77,7 +77,7 @@ window.PROJECTS = [
     ],
     links: {
       appStore: "https://apps.apple.com/ca/app/letter-day/id6767080426",
-      facebook: ""
+      facebook: "https://www.facebook.com/share/1B8CyAYYkN/"
     }
   }
 
