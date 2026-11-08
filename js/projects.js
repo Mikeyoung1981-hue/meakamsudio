@@ -90,5 +90,6 @@ window.STUDIO = {
   email: "support@meakamstudio.com",
   feedbackEmail: "feedback@meakamstudio.com",
   facebook: "",                        // optional
+  discord: "https://discord.gg/af3x94nThv",
   developerName: "Mike Young"          // the name shown on the App Store
 };

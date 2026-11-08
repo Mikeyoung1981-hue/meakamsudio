@@ -50,6 +50,7 @@
           <a href="support.html">Support</a>
           <a href="privacy.html">Privacy</a>
           <a href="mailto:${esc(S.email)}">Contact</a>
+          ${S.discord ? `<a href="${esc(S.discord)}" target="_blank" rel="noopener">Discord</a>` : ""}
           ${S.facebook ? `<a href="${esc(S.facebook)}" target="_blank" rel="noopener">Facebook</a>` : ""}
         </nav>
       </div>`;
@@ -115,12 +116,16 @@
               ${(p.platforms || []).map((x) => `<span class="chip">${esc(x)}</span>`).join("")}
               <span class="chip">${esc(p.when)}</span>
             </div>
+            <div class="get-row">
             ${store
               ? `<a class="app-store-badge" href="${esc(store)}" target="_blank" rel="noopener">
                    <span><small>Download on the</small><strong>App Store</strong></span></a>`
-              : `<span class="chip" style="background:var(--accent-2);color:#1a1a1a;font-weight:700">Coming soon</span>`}
+              : `<span class="soon-badge">Coming soon</span>`}
             ${p.links && p.links.facebook
-              ? ` <a class="btn ghost" href="${esc(p.links.facebook)}" target="_blank" rel="noopener">Follow on Facebook</a>` : ""}
+              ? `<a class="app-store-badge fb-badge" href="${esc(p.links.facebook)}" target="_blank" rel="noopener">
+                   <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>
+                   <span><small>Follow us on</small><strong>Facebook</strong></span></a>` : ""}
+            </div>
           </div>
         </div>
       </section>

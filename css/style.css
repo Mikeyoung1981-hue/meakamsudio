@@ -148,6 +148,15 @@ section { padding: 56px 0; }
   background: #000; color: #fff; text-decoration: none;
   border: 1px solid #555; border-radius: 12px; padding: 8px 18px;
 }
+.get-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch; }
+.app-store-badge { min-height: 54px; }
+.fb-badge { background: #1877f2; border-color: #1877f2; }
+.fb-badge:hover, .app-store-badge:hover { filter: brightness(1.1); }
+.fb-badge svg { width: 26px; height: 26px; flex: none; }
+.soon-badge {
+  display: inline-flex; align-items: center; min-height: 54px; padding: 0 20px;
+  border-radius: 12px; background: var(--accent-2); color: #1a1a1a; font-weight: 700;
+}
 .app-store-badge small { display: block; font-size: 11px; line-height: 1; }
 .app-store-badge strong { display: block; font-size: 20px; line-height: 1.2; }
 
@@ -190,6 +199,20 @@ section { padding: 56px 0; }
   background: var(--panel); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 28px;
 }
+
+/* ---------- Community ---------- */
+.community {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 32px 36px; position: relative; overflow: hidden;
+}
+.community::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px;
+  background: linear-gradient(var(--accent) 0 33%, var(--accent-2) 33% 66%, var(--accent-3) 66%);
+}
+.community h2 { font-family: "Fredoka", "Outfit", sans-serif; font-size: 30px; margin: 0 0 6px; }
+.community p { color: var(--muted); margin: 0; max-width: 560px; }
+.btn.discord { background: #5865f2; }
 
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--line); padding: 40px 0; margin-top: 56px; color: var(--muted); font-size: 15px; }
