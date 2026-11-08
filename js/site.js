@@ -57,12 +57,10 @@
 
   /* ---------- Cards ---------- */
   function card(p) {
-    const shot = p.screenshots && p.screenshots[0];
     const soon = p.status === "coming-soon";
     return `
       <a class="card" href="project.html?id=${encodeURIComponent(p.id)}">
         <div class="card-art" style="background:${esc(p.color || "#333")}">
-          ${shot ? `<img class="shot" src="${esc(shot)}" alt="" loading="lazy">` : ""}
           <img class="icon" src="${esc(p.icon)}" alt="${esc(p.name)} icon"
                onerror="this.style.display='none'">
           <span class="badge ${soon ? "soon" : ""}">${soon ? "Coming soon" : "Out now"}</span>
@@ -79,7 +77,8 @@
     const kind = el.dataset.list;          // "game", "app" or "all"
     const status = el.dataset.status;      // optional
     const items = P.filter((p) =>
-      (kind === "all" || p.kind === kind) && (!status || p.status === status));
+      (kind === "all" || p.kind === kind) && (!status || p.status === status))
+      .sort((a, b) => (a.status === "released" ? 0 : 1) - (b.status === "released" ? 0 : 1));
     el.innerHTML = items.length
       ? `<div class="grid">${items.map(card).join("")}</div>`
       : `<div class="empty">${esc(el.dataset.empty || "Nothing here yet — check back soon.")}</div>`;

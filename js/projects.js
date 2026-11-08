@@ -53,11 +53,14 @@ window.PROJECTS = [
     tagline: "Your daily word search journey.",
     when: "Out now on iPad",
     platforms: ["iPad", "Mac (Apple chip)", "Apple Vision"],
-    color: "#e0793a",
+    color: "#4a7cf3",
     icon: "assets/projects/letter-day/icon.png",
     screenshots: [
-      // "assets/projects/letter-day/shot-1.png",
-      // "assets/projects/letter-day/shot-2.png",
+      "assets/projects/letter-day/shot-1.jpg",
+      "assets/projects/letter-day/shot-2.jpg",
+      "assets/projects/letter-day/shot-3.jpg",
+      "assets/projects/letter-day/shot-4.jpg",
+      "assets/projects/letter-day/shot-5.jpg"
     ],
     video: "",
     about: [
